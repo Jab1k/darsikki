@@ -22,6 +22,25 @@ class MyApp extends StatelessWidget {
                       height: 100,
                       width: 500,
                       decoration: const BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.all(Radius.circular(16))),
+                      child: Text('R',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              decoration: TextDecoration.none,
+                              color: Colors.black)),
+                    ),
+                    // Container(
+                    //   height: 10,
+                    //   width: 500,
+                    //   decoration: const BoxDecoration(
+                    //       color: Colors.red,
+                    //       borderRadius: BorderRadius.all(Radius.circular(16))),
+                    // ),
+                    Container(
+                      width: 500,
+                      height: 100,
+                      decoration: const BoxDecoration(
                           color: Colors.blue,
                           borderRadius: BorderRadius.all(Radius.circular(16))),
                       child: Text('U',
@@ -30,39 +49,20 @@ class MyApp extends StatelessWidget {
                               decoration: TextDecoration.none,
                               color: Colors.black)),
                     ),
-                    Container(
-                      height: 10,
-                      width: 500,
-                      decoration: const BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.all(Radius.circular(16))),
-                    ),
-                    Container(
-                      width: 500,
-                      height: 100,
-                      decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(16))),
-                      child: Text('Z',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              decoration: TextDecoration.none,
-                              color: Colors.black)),
-                    ),
-                    Container(
-                      height: 10,
-                      width: 500,
-                      decoration: const BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.all(Radius.circular(16))),
-                    ),
+                    // Container(
+                    //   height: 10,
+                    //   width: 500,
+                    //   decoration: const BoxDecoration(
+                    //       color: Colors.red,
+                    //       borderRadius: BorderRadius.all(Radius.circular(16))),
+                    // ),
                     Container(
                       height: 100,
                       width: 500,
                       decoration: const BoxDecoration(
-                          color: Colors.green,
+                          color: Colors.red,
                           borderRadius: BorderRadius.all(Radius.circular(16))),
-                      child: Text('B',
+                      child: Text('S',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               decoration: TextDecoration.none,
