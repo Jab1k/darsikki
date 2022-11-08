@@ -11,74 +11,93 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Center(
-          child: Container(
-              color: Colors.black,
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+        home: Container(
+            color: Colors.white,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Container(
-                      height: 500,
-                      width: 100,
+                      height: 200,
+                      width: 150,
                       decoration: const BoxDecoration(
-                          color: Colors.blue,
+                          color: Colors.orange,
                           borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(16),
-                              bottomLeft: Radius.circular(16))),
-                      child: Center(
-                        child: Text('F',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                color: Colors.black)),
-                      ),
+                              bottomRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20),
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20))),
                     ),
-                    // Container(
-                    //   height: 10,
-                    //   width: 500,
-                    //   decoration: const BoxDecoration(
-                    //       color: Colors.red,
-                    //       borderRadius: BorderRadius.all(Radius.circular(16))),
-                    // ),
                     Container(
-                      width: 100,
-                      height: 500,
-                      decoration: const BoxDecoration(color: Colors.white),
-                      child: Center(
-                        child: Text('R',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                color: Colors.black)),
-                      ),
-                    ),
-                    // Container(
-                    //   height: 10,
-                    //   width: 500,
-                    //   decoration: const BoxDecoration(
-                    //       color: Colors.red,
-                    //       borderRadius: BorderRadius.all(Radius.circular(16))),
-                    // ),
-                    Container(
-                      height: 500,
-                      width: 100,
+                      height: 200,
+                      width: 150,
                       decoration: const BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(16),
-                              bottomRight: Radius.circular(16))),
-                      child: Center(
-                        child: Text('A',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                decoration: TextDecoration.none,
-                                color: Colors.black)),
-                      ),
+                              bottomRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20),
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20))),
                     )
                   ],
                 ),
-              )),
-        ));
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Container(
+                      height: 200,
+                      width: 150,
+                      decoration: const BoxDecoration(
+                          color: Colors.purple,
+                          borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20),
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20))),
+                    ),
+                    Container(
+                      height: 200,
+                      width: 150,
+                      decoration: const BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20),
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20))),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Container(
+                      height: 200,
+                      width: 150,
+                      decoration: const BoxDecoration(
+                          color: Colors.blueAccent,
+                          borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20),
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20))),
+                    ),
+                    Container(
+                      height: 200,
+                      width: 150,
+                      decoration: const BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20),
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20))),
+                    )
+                  ],
+                ),
+              ],
+            )));
   }
 }
